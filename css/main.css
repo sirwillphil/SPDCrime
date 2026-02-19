@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+}
+
+#info {
+    z-index: 1000;
+    position: absolute;
+    width: 500px;
+    top: 1%;
+    bottom: 1%;
+    left: .5%;
+    padding: 40px 15px 800px 15px;
+    background: #343a40;
+    color: white;
+    height: 0px;
+}
+
+#info a {
+    color: lightgray;
+}
+
+#info a:hover {
+    color: white;
+    opacity: 0.3;
+}
+
+#title {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+#desc {
+    text-align: center;
+    color: lightgray;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#crime-count {
+    margin: 0;
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+}
+
+#legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    align-items: right;
+}
+
+/* each line for a break */
+.break {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* basic style for a dot/circle */
+.dot {
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* the label for the dot */
+.dot-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: italic;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.c3-tooltip td {
+    color: black;
+    background: white;
+}

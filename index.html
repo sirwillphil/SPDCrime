@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Seattle Crime Data (2021-2026)</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+    <!-- include icons -->
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="info">
+        <div id="title">
+            Seattle Crime Data (2025)
+            <span id="reset"><a href="#">reset</a></span>
+        </div>
+        <div id="count" class="card">
+            <h5 id="desc">Crime Count by Type</h5>
+            <p id="crime-count"></p>
+        </div>
+        <div id="crime-chart"></div>
+        <p id = "welcome">To get started click on a Seattle Neighborhood!</p>
+        <br>
+        <br>
+        Data Sources: <br> <a href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data">Seattle Police Department Crime Data (2008-Present)</a> <br>
+        <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::neighborhood-map-atlas-neighborhoods/explore?location=47.614610%2C-122.336918%2C11.00">Seattle Neighborhoods</a>
+    </div>
+    <div id="map"></div>
+    <div id="legend"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/c3.min.js"></script>
+    <script src = "js/main.js"></script>
+</body>
+
+</html>
